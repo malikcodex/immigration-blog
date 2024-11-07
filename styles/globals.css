@@ -152,8 +152,8 @@ body {
 
 @media screen and (max-width: 886px) {
     .hero_set {
-        height: 170px;
-        width: 170px;
+        height: 130px;
+        width: 130px;
         object-fit: contain;
     }
 }

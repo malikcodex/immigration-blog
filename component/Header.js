@@ -12,7 +12,9 @@ const Header = ({title, keywords, description, meta = false}) =>  {
             <title>{title}</title>
             <meta name="keyword" content={keywords} />
             <meta name="description" content={description} />
-            <link rel='favicon' type='image/x-icon' href={logo.src}/>
+            <link rel="apple-touch-icon" href={logo.src} sizes="180x180" />
+            <link rel="icon" href={logo.src} sizes="32x32" type="image/png" />
+            <link rel="icon" href={logo.src} sizes="16x16" type="image/png" />
             {
                 !meta ? (
                     <meta name="robots" content="noindex, nofollow" />

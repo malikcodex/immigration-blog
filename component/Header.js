@@ -38,7 +38,19 @@ const Header = ({title, keywords, description, meta = false}) =>  {
                     </div>
                     
                     <div  className="col-xl-9 col-md-8 col-sm-7 col-7 px-2 d-flex d-sm-flex d-md-flex d-lg-none d-xl-none justify-content-end align-items-center">
-                        <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" className="btn btn-md btn-dark"><i className="bi bi-list"></i></a>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i className="bi bi-list"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><Link href='/about-us' className='dropdown-item'>About Us</Link></li>
+                                <li><Link href='/support' className='dropdown-item'><i className="bi bi-telephone-forward"></i> Support</Link></li>
+                                <li><Link href='/contact-us' className='dropdown-item'>Contact Us</Link></li>
+                                <li><Link href='/terms-of-service' className='dropdown-item'>Terms of Service</Link></li>
+                                <li><Link href='/team' className='dropdown-item'><i className="bi bi-microsoft-teams"></i> Team</Link></li>
+                                <li><Link href='/blog' className='dropdown-item'><i className="bi bi-journals"></i> Blog</Link></li>
+                            </ul>
+                        </div>
                     </div>
 
                     <div className="col-xl-9 col-md-8 col-sm-7 col-7 px-2 d-none d-sm-none d-md-none d-lg-flex d-xl-flex justify-content-end align-items-center">
@@ -53,22 +65,6 @@ const Header = ({title, keywords, description, meta = false}) =>  {
                     </div>
                </div>
            </div>
-        </div>
-
-        <div className="offcanvas offcanvas-start" style={{zIndex: '111111111'}} tabIndex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-            <div className="offcanvas-header">
-                <h5 className="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
-                <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div className="offcanvas-body">
-                <div className="d-flex flex-column">
-                    <Link href='/about-us' className="fs-5 text-brown text-decoration-none lh-base mb-2 col-12">About Us</Link>
-                    <Link href='/contact-us' className="fs-5 text-brown text-decoration-none lh-base mb-2 col-12">Contact Us</Link>
-                    <Link href='/support' className="fs-5 text-brown text-decoration-none lh-base mb-2 col-12">Support</Link>
-                    <Link href='/terms-of-service' className="fs-5 text-brown text-decoration-none lh-base mb-2 col-12">Terms of Services</Link>
-                    <Link href='/blog' className="fs-5 text-brown text-decoration-none lh-base mb-2 col-12">Blog</Link>
-                </div>
-            </div>
         </div>
         </>
     )

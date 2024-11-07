@@ -27,7 +27,7 @@ const Blog = () => {
                             <button className="bg-purple text-brown btn btn-lg"><i className="bi bi-search"></i></button>
                         </div>
                     </div>
-                    <div className='col-xl-6 col-md-6 col-sm-12 col-12 mt-3 mt-sm-3 mt-md-0 mt-lg-0 mt-xl-0'>
+                    <div className='col-xl-6 col-md-6 col-sm-12 col-12 pt-3 pt-sm-3 pt-md-0 pt-lg-0 pt-xl-0'>
                         <div className='d-flex gap-3'>
                             <Image 
                                 src={sis_one}

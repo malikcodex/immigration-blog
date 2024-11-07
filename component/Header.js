@@ -39,8 +39,8 @@ const Header = ({title, keywords, description, meta = false}) =>  {
                     
                     <div  className="col-xl-9 col-md-8 col-sm-7 col-7 px-2 d-flex d-sm-flex d-md-flex d-lg-none d-xl-none justify-content-end align-items-center">
                         <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i className="bi bi-list"></i>
+                            <button class="btn bg-skin btn-md dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i className="bi bi-list fs-4"></i>
                             </button>
                             <ul class="dropdown-menu">
                                 <li><Link href='/about-us' className='dropdown-item'>About Us</Link></li>

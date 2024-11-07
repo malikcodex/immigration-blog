@@ -161,26 +161,26 @@ const Home = () => {
             <div className="col-12">
                  <div className="container-fluid">
                      <div className="row py-5">
-                         <div className="col-xl-3 col-md-4 col-sm-6 col-12">
-                            <div className="bg-yellow p-5 dropshadow">
+                         <div className="col-xl-3 col-md-4 col-sm-6 col-12 mb-3">
+                            <div className="bg-yellow p-5 bg-shadow-sm">
                                 <h2 className="fs-1 lh-base fw-bold mb-1">99.7%</h2>
                                 <h3 className="fs-5 lh-base fw-normal mb-2">Success Rate</h3>
                             </div>
                         </div>
-                        <div className="col-xl-3 col-md-4 col-sm-6 col-12">
-                            <div className="bg-yellow p-5 dropshadow">
+                        <div className="col-xl-3 col-md-4 col-sm-6 col-12 mb-3">
+                            <div className="bg-yellow p-5 bg-shadow-sm">
                                 <h2 className="fs-1 lh-base fw-bold mb-1">100,000</h2>
                                 <h3 className="fs-5 lh-base fw-normal mb-2">Immigrants Helped</h3>
                             </div>
                         </div>
-                        <div className="col-xl-3 col-md-4 col-sm-6 col-12">
-                            <div className="bg-yellow p-5 dropshadow">
+                        <div className="col-xl-3 col-md-4 col-sm-6 col-12 mb-3">
+                            <div className="bg-yellow p-5 bg-shadow-sm">
                                 <h2 className="fs-1 lh-base fw-bold mb-1">4.7%</h2>
                                 <h3 className="fs-5 lh-base fw-normal mb-2">Trustpilot Reviews</h3>
                             </div>
                         </div>
-                        <div className="col-xl-3 col-md-4 col-sm-6 col-12">
-                            <div className="bg-yellow p-5 dropshadow">
+                        <div className="col-xl-3 col-md-4 col-sm-6 col-12 mb-3">
+                            <div className="bg-yellow p-5 bg-shadow-sm">
                                 <h2 className="fs-1 lh-base fw-bold mb-1">A+</h2>
                                 <h3 className="fs-5 lh-base fw-normal mb-2">BBB Accredidation</h3>
                             </div>

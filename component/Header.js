@@ -2,6 +2,7 @@ import Head from "next/head";
 import React from "react";
 import Image from "next/image";
 import logo from '@/public/images/items/logo.png'
+import Favicon from '@/public/images/items/favicon.jpg';
 import Link from "next/link";
 
 const Header = ({title, keywords, description, meta = false}) =>  {
@@ -12,9 +13,9 @@ const Header = ({title, keywords, description, meta = false}) =>  {
             <title>{title}</title>
             <meta name="keyword" content={keywords} />
             <meta name="description" content={description} />
-            <link rel="apple-touch-icon" href={logo.src} sizes="180x180" />
-            <link rel="icon" href={logo.src} sizes="32x32" type="image/png" />
-            <link rel="icon" href={logo.src} sizes="16x16" type="image/png" />
+            <link rel="apple-touch-icon" href={Favicon.src} sizes="180x180" />
+            <link rel="icon" href={Favicon.src} sizes="32x32" type="image/png" />
+            <link rel="icon" href={Favicon.src} sizes="16x16" type="image/png" />
             {
                 !meta ? (
                     <meta name="robots" content="noindex, nofollow" />

@@ -25,6 +25,10 @@ body {
     background: #ffceb1;
 }
 
+.bg-skin:hover {
+    background: #ffceb1;
+}
+
 .h-xs {
     height: 60px;
 }

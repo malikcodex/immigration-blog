@@ -21,7 +21,7 @@ const Home = () => {
                             <h3 className="fs-4 fw-light lh-base">To empower, inform, and support individuals and families through every step of the immigration process, from initial consultation to settling into a new community. We believe in simplifying complex immigration procedures, so you can focus on your goals with confidence.</h3>
                         </div>
                         <div className='col-xl-6 col-md-6 col-sm-12 col-12'>
-                            <div className='d-flex gap-3'>
+                            <div className='d-flex gap-3 mt-3'>
                                 <Image 
                                     src={sis_one}
                                     height="500"

@@ -25,7 +25,6 @@ const Footer = () => {
                                 <i className="btn border-brown btn-md bi bi-threads"></i>
                                 <i className="btn border-brown btn-md bi bi-twitter"></i>
                                 <i className="btn border-brown btn-md bi bi-youtube"></i>
-                                <i className="btn border-brown btn-md bi bi-whatsapp"></i>
                             </div>
                         </div>
                     </div>

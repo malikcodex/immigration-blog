@@ -18,7 +18,7 @@ const Home = () => {
                         <h3 className="fs-4 fw-light lh-base">At The Immigration Sisters, our team is composed of skilled professionals dedicated to supporting you on your immigration journey. With a range of expertise in immigration law, cultural transitions, and case management, each team member is committed to providing personalized guidance and unwavering support.</h3>
                     </div>
                     <div className='col-xl-6 col-md-6 col-sm-12 col-12'>
-                        <div className='d-flex gap-3'>
+                        <div className='d-flex gap-3 mt-3'>
                             <Image 
                                 src={sis_one}
                                 height="500"

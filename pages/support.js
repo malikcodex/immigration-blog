@@ -28,7 +28,7 @@ const Support = () => {
                         </div>
                     </div>
                     <div className='col-xl-6 col-md-6 col-sm-12 col-12'>
-                        <div className='d-flex gap-3'>
+                        <div className='d-flex gap-3 mt-3'>
                             <Image 
                                 src={sis_one}
                                 height="500"

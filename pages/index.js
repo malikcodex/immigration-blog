@@ -21,7 +21,7 @@ const Home = () => {
                         <Link href="/team" className="mt-3 text-decoration-none rounded  bg-purple px-3 py-3 text-white fw-bold fs-5"><i className="bi bi-microsoft-teams"></i> Meet Our Team</Link>
                     </div>
                     <div className='col-xl-6 col-md-6 col-sm-12 col-12'>
-                        <div className='d-flex gap-3'>
+                        <div className='d-flex gap-3 mt-3'>
                             <Image 
                                 src={sis_one}
                                 height="500"

@@ -213,7 +213,6 @@ const trainingData = [
     { input: "Can I travel while my green card application is pending?" , output: "Yes, but only with an approved Advance Parole document."},
     { input: "What is the affidavit of support?" , output: "Its a document showing the petitioner can financially support the immigrant."},
     { input: "What does “out of status” mean?" , output: "It means your visa or authorized stay has expired, and you are no longer legally in the U.S."},
-    { input: "Can I get a green card if Ive been deported before?" , output: "Its possible, but youll need a waiver and must meet specific requirements."},
     { input: "Can I get a green card if Ive been deported before?" , output: "Its possible, but youll need a waiver and must meet specific requirements."}
   ];
   

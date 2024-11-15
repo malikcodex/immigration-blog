@@ -374,7 +374,7 @@ export async function getArticlesBySearch({search, category}) {
                     }
                 }
             ]
-        } : {}
+        } : {category: category}
 
         let find = await db.collection("articles").find(s).toArray();
 

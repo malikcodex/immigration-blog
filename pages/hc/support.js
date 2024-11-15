@@ -7,8 +7,22 @@ import sis_four from '@/public/images/team/sis-15.jpg';
 import imigration from '@/public/images/team/imigration.webp';
 import Image from 'next/image';
 import Link from 'next/link';
+import { str_to_heading } from '@/core/util';
+import { getArticlesBySearch } from '@/core/db';
+import { useRouter } from 'next/router';
 
 const Support = () => {
+    const router = useRouter();
+    const [value, set_search] = useState(null);
+    function set_search_btn(e) {
+        e.preventDefault();
+        if(value !== null) {
+            router.push(`/support?search=${value}`);
+        } else {
+            make_msg("Warning", "Please enter something to search ..", "error");
+            return false;
+        }
+    }
     return (
         <Layout title='Our Support' description='At The Immigration Sisters, we’re dedicated to making your experience as seamless as possible. Whether you have questions, need guidance, or want updates on your case, our support team is here to assist every step of the way.' meta='yes' keywords='Our Support, Our Guide, We Help You'>
             <div className='container-fluid'>
@@ -23,8 +37,9 @@ const Support = () => {
                                spellCheck="false"
                                autoComplete='off'
                                placeholder="Search articles"
+                               onChange={(e) => set_search(e.target.value || null)}
                             />
-                            <button className="bg-purple text-white btn btn-lg"><i className="bi bi-search"></i></button>
+                            <button onClick={(e) => set_search_btn(e)} className="bg-purple text-brown btn btn-lg"><i className="bi bi-search"></i></button>
                         </div>
                     </div>
                     <div className='col-xl-6 col-md-6 col-sm-12 col-12'>
@@ -121,3 +136,12 @@ const Support = () => {
 }
 
 export default Support;
+export async function getServerSideProps(context) {
+    const {search} = context.query || null;
+    let articles = await getArticlesBySearch({search: search, category: 'support'});
+    return {
+        props: {
+            articles
+        }
+    }
+}

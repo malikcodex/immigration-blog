@@ -349,7 +349,7 @@ export async function getFeedbacksFor30() {
             return { notFound: true };
         }
 
-        // Filter documents where the date falls within the last 30 days
+        // Filter documents where the date falls within the last 30 day
         find = find.filter(contact => {
             const contactDate = new Date(contact.date);
             return contactDate >= thirtyDaysAgo && contactDate < now;

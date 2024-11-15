@@ -96,6 +96,25 @@ const Footer = () => {
 
 // Sample data
 const trainingData = [
+    { input: 'Hi' , output: 'Hello! How can I assist you with your immigration needs today?' },
+    { input: 'How are you?' , output: 'Im doing well, thank you! How can I help you today?' },
+    { input: 'Hello' , output: 'Hi there! What brings you here today?' },
+    { input: 'Good morning/Good afternoon' , output: 'Good morning/afternoon! How can I make your day easier?' },
+    { input: 'What is your name?' , output: 'Im your assistant, here to help with any immigration-related questions.' },
+    { input: 'Thank you' , output: 'Youre welcome! Let me know if you have more questions.' },
+    { input: 'Can I ask you something?' , output: 'Of course! Im here to help with any immigration-related questions.' },
+    { input: 'Sorry' , output: 'No problem at all! How can I assist you?' },
+    { input: 'Goodbye' , output: 'Goodbye! Feel free to reach out anytime. Have a great day!' },
+    { input: 'Where are you located?' , output: 'Were located in Riviera Beach, Florida, but we can assist clients remotely as well.' },
+    { input: 'How much do your services cost?' , output: 'Our pricing depends on the service. Please let us know what you need assistance with, and we can provide details.' },
+    { input: 'What services do you offer?' , output: 'We assist with immigration document preparation, visa applications, green cards, citizenship, and more. How can we help you?' },
+    { input: 'How long does the process take?' , output: 'Processing times vary depending on the type of application. Let us know what youre applying for, and we can give you an estimate.' },
+    { input: 'Do you help with translations?' , output: 'Yes, we offer translation services for immigration documents at $40 per page.' },
+    { input: 'Whats the first step to apply for a visa?' , output: 'The first step is to determine the type of visa you need and gather the required documents.' },
+    { input: 'Can I speak to someone directly?' , output: 'Absolutely! Please provide your contact details, and someone from our team will reach out.' },
+    { input: 'Do you handle asylum cases?' , output: 'Yes, we assist with asylum applications and related cases. Let us know how we can help.' },
+    { input: 'How do I book an appointment?' , output: 'You can schedule an appointment by calling us at 561-667-3599 or sending us an email at info@narcissellc.com.' },
+    { input: 'Can I apply for a green card without a sponsor?' , output: 'Yes, in some cases, such as EB-2 NIW or asylum, you may not need a sponsor. Let us know more about your situation.' },
     { input: "What are the basic steps to apply for a U.S. visa?", output: "The process generally involves completing an application form, gathering required documents, paying fees, and attending an interview at the U.S. embassy or consulate in your home country. Specific requirements vary by visa type." },
     { input: "How long does it typically take to process a visa application?", output: "Processing times vary depending on the visa type and your local U.S. embassy or consulate. On average, it can take several weeks to a few months." },
     { input: "What documents do I need to prepare for a visa application?", output: "Common documents include your passport, birth certificate, financial statements, and a completed application form. Some visas require additional documents, like a job offer or proof of family relationships." },
@@ -193,6 +212,7 @@ const trainingData = [
     { input: "Can I travel while my green card application is pending?" , output: "Yes, but only with an approved Advance Parole document."},
     { input: "What is the affidavit of support?" , output: "Its a document showing the petitioner can financially support the immigrant."},
     { input: "What does “out of status” mean?" , output: "It means your visa or authorized stay has expired, and you are no longer legally in the U.S."},
+    { input: "Can I get a green card if Ive been deported before?" , output: "Its possible, but youll need a waiver and must meet specific requirements."},
     { input: "Can I get a green card if Ive been deported before?" , output: "Its possible, but youll need a waiver and must meet specific requirements."}
   ];
   

@@ -100,7 +100,7 @@ const trainingData = [
     { input: 'How are you?' , output: 'Im doing well, thank you! How can I help you today?' },
     { input: 'Hello' , output: 'Hi there! What brings you here today?' },
     { input: 'Hellow' , output: 'Hi there! What brings you here today?' },
-    { input: 'Good morning/Good afternoon' , output: 'Good morning/afternoon! How can I make your day easier?' },
+    { input: 'Good morning Good afternoon' , output: 'Good morning/afternoon! How can I make your day easier?' },
     { input: 'What is your name?' , output: 'Im your assistant, here to help with any immigration-related questions.' },
     { input: 'Thank you' , output: 'Youre welcome! Let me know if you have more questions.' },
     { input: 'Can I ask you something?' , output: 'Of course! Im here to help with any immigration-related questions.' },

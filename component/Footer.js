@@ -75,6 +75,14 @@ const Footer = () => {
                     document.querySelector(".box_").classList.toggle("Zindex_add");
                     return;
                 } 
+
+                if(k === 1) {
+                    let a = document.createElement("a");
+                    a.setAttribute("href" , `https://wa.me/15616673599?text=Hello! Hi Dear! How Can We Assist You?`);
+                    a.setAttribute("target", "_blank");
+                    a.click();
+                    return;
+                }
                 
                 if(k === 2) {
                     document.querySelector(".box_two").classList.toggle("d-none");

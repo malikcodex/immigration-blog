@@ -103,8 +103,8 @@ const trainingData = [
     { input: "How can I bring my spouse or children to the U.S.?", output: "You can file a petition for a family-based immigrant visa, such as an I-130 form. Once approved, your family members can apply for a visa at the U.S. embassy in their country." },
     { input: "What is the process for applying for a green card for family members?", output: "First, you must file a petition on behalf of your family member. After USCIS approves the petition, the National Visa Center will process the application and schedule an interview at the embassy or consulate." },
     { input: "How do I apply for Temporary Protected Status (TPS) as a Haitian?", output: "To apply for TPS, submit Form I-821 and any required documents showing you are eligible, such as proof of Haitian nationality and continuous U.S. residency." },
-    { input: "How long will TPS be available for Haitians?", output: "TPS extensions depend on the U.S. government’s decision. Keep updated on the USCIS website, as they will announce any extensions or terminations for TPS." },
-    { input: "What documents do I need to apply for humanitarian parole for family members in Haiti?", output: "You’ll need proof of family relationship, reasons for humanitarian need, and identity documents for the applicant and petitioner. Each case is reviewed based on its unique circumstances." },
+    { input: "How long will TPS be available for Haitians?", output: "TPS extensions depend on the U.S. governments decision. Keep updated on the USCIS website, as they will announce any extensions or terminations for TPS." },
+    { input: "What documents do I need to apply for humanitarian parole for family members in Haiti?", output: "Youll need proof of family relationship, reasons for humanitarian need, and identity documents for the applicant and petitioner. Each case is reviewed based on its unique circumstances." },
     { input: "What types of work visas are available for the U.S.?", output: "Common work visas include the H-1B for skilled workers, the L-1 for company transfers, and the EB-2/EB-3 for skilled or professional immigrants seeking permanent residency." },
     { input: "How can I apply for an employment-based green card?", output: "Your employer must file a petition on your behalf, usually through the PERM labor certification process, followed by Form I-140." },
     { input: "What is the process for seeking asylum for Haitians in the U.S.?", output: "You must apply within one year of arriving in the U.S. by submitting Form I-589. An interview or hearing will determine if you qualify based on credible fear of persecution in Haiti." },
@@ -159,6 +159,41 @@ const trainingData = [
     { input: "How do I contact you to schedule an appointment for consultation?" , output: "You can contact us via phone at 561-667-3599 or email at info@narcissellc.com. We will be happy to schedule a time that works for you."},
     { input: "What type of immigration cases do you specialize in?" , output: "We specialize in family reunification, humanitarian relief, asylum, TPS, and document preparation. Our services are tailored to the Haitian community and beyond."},
     { input: "Can you assist with translations and document corrections for Haitian documents?" , output: "Yes, we provide certified translation services and can guide you through the process of correcting errors on Haitian documents, like birth certificates and passports."},
+    { input: "What is an immigration consultant/document preparer?" , output: "An immigration consultant or document preparer helps clients prepare and organize immigration forms and applications without providing legal advice."},
+    { input: "Do I need a lawyer for my immigration case?" , output: "It depends. While some cases may require legal representation, others, like basic form preparation, can be handled by an experienced document preparer."},
+    { input: "Can you help me determine which visa I qualify for?" , output: "Yes, we can help guide you based on your goals, such as work, study, or family sponsorship."},
+    { input: "How much is the USCIS filing fee?" , output: "Fees vary depending on the application."},
+    { input: "What happens after I submit my application?" , output: "USCIS will review it, send a receipt notice, and may request more evidence or schedule an interview."},
+    { input: "Can I sponsor my parents for a green card?" , output: "Yes, U.S. citizens who are at least 21 years old can sponsor their parents."},
+    { input: "Can a green card holder sponsor their spouse?" , output: "Yes, green card holders can sponsor their spouse, but processing times may be longer than for U.S. citizens."},
+    { input: "How long does it take to bring my spouse to the U.S.?" , output: "Processing times vary based on your immigration status and the country where your spouse resides."},
+    { input: "Can I sponsor my sibling?" , output: "U.S. citizens can sponsor siblings, but this category often has the longest wait times."},
+    { input: "What if I don’t meet the income requirement to sponsor a family member?" , output: "You can use a joint sponsor who meets the income requirement to help with the Affidavit of Support."},
+    { input: "What is the H-1B visa?" , output: "The H-1B is a work visa for skilled professionals sponsored by a U.S. employer."},
+    { input: "Can I work while on a tourist visa?" , output: "No, working on a tourist visa is prohibited and could lead to serious consequences."},
+    { input: "How do I find a job sponsor in the U.S.?" , output: "Research U.S. companies in your field and apply for jobs. Some companies offer visa sponsorship for qualified candidates."},
+    { input: "What is premium processing?" , output: "Premium processing is an expedited service for certain visa petitions, providing decisions within 15 days for an additional fee."},
+    { input: "What is an Employment Authorization Document (EAD)?" , output: "An EAD is a work permit that allows certain immigrants to work legally in the U.S."},
+    { input: "How do I apply for a student visa (F-1)?" , output: "First, apply to a SEVP-certified school, then pay the SEVIS fee, and finally apply for a visa at a U.S. embassy or consulate."},
+    { input: "Can I work while on an F-1 visa?" , output: "Yes, but only under specific conditions, such as on-campus employment or Optional Practical Training (OPT)"},
+    { input: "What happens if I stop attending school on an F-1 visa?" , output: "You may lose your legal status and could face removal from the U.S."},
+    { input: "Can I change my status from a student visa to a work visa?" , output: "Yes, if you find a job and your employer sponsors you, you can apply to change your status."},
+    { input: "Can I bring my family on a student visa?" , output: "Yes, dependents can apply for F-2 visas to accompany you."},
+    { input: "What is Temporary Protected Status (TPS)?" , output: "TPS provides temporary protection for individuals from countries experiencing unsafe conditions, allowing them to live and work in the U.S."},
+    { input: "Can I apply for asylum after being in the U.S. for over a year?" , output: "Generally, you must apply within one year, but exceptions exist for changed or extraordinary circumstances."},
+    { input: "What is VAWA?" , output: "VAWA allows certain abused spouses, children, and parents of U.S. citizens or green card holders to self-petition for immigration benefits."},
+    { input: "Can I apply for a green card through DACA?" , output: "DACA itself doesnt lead to a green card, but some recipients may qualify through marriage or employment."},
+    { input: "What is humanitarian parole?" , output: "Humanitarian parole allows individuals to enter the U.S. temporarily for urgent humanitarian reasons."},
+    { input: "How do I apply for U.S. citizenship?" , output: "File Form N-400 and meet requirements like continuous residence, physical presence, and passing the citizenship test."},
+    { input: "What happens if I fail the citizenship test?" , output: "Youll have one more chance to retake the failed portion of the test"},
+    { input: "Can I apply for citizenship if I owe taxes?" , output: "Yes, but you must show proof of a payment plan or resolution with the IRS."},
+    { input: "How long does it take to become a U.S. citizen?" , output: "On average, it takes 8–12 months, depending on your case and local processing times."},
+    { input: "Can I have dual citizenship?" , output: "The U.S. allows dual citizenship, but some countries may not. Check with your home countrys laws."},
+    { input: "What documents do I need for my immigration interview?" , output: "Bring your appointment notice, ID, passport, original documents, and any requested evidence."},
+    { input: "Can I travel while my green card application is pending?" , output: "Yes, but only with an approved Advance Parole document."},
+    { input: "What is the affidavit of support?" , output: "Its a document showing the petitioner can financially support the immigrant."},
+    { input: "What does “out of status” mean?" , output: "It means your visa or authorized stay has expired, and you are no longer legally in the U.S."},
+    { input: "Can I get a green card if Ive been deported before?" , output: "Its possible, but youll need a waiver and must meet specific requirements."}
   ];
   
   // Preprocess data
@@ -237,7 +272,7 @@ const trainingData = [
                                 loading="lazy"
                                 alt="footer logo"
                             />
-                            <h3 className="fs-5 fw-normal mb-2 lh-base">{pathname.includes("hc") ? "Sè Imigrasyon yo dedye a bay moun fòs nan vwayaj imigrasyon yo avèk gidans fyab ak sipò pèsonalize. Nou la pou fè wout ou anver yon nouvo kòmansman pi san pwoblèm ak pozitif ke posib." : pathname.includes("es") ? "Las Hermanas de Inmigración están dedicadas a empoderar a las personas en sus viajes de inmigración con orientación confiable y apoyo personalizado. Estamos aquí para hacer que tu camino hacia un nuevo comienzo sea lo más fluido y positivo posible." : "The Immigration Sisters are dedicated to empowering individuals on their immigration journeys with reliable guidance and personalized support. We’re here to make your path to a new beginning as seamless and positive as possible."}</h3>
+                            <h3 className="fs-5 fw-normal mb-2 lh-base">{pathname.includes("hc") ? "Immigration Sisters pa yon kabinè avoka, e li pa ap aji kòm avoka ou. Sèvis preparasyon dokiman legal ak enfòmasyon sa a pa ranplase konsèy yon avoka. Nou pa ka bay konsèy legal e nou ka sèlman bay sèvis otosèvis dapre direksyon espesifik ou. Nou pa otorize pou pratike lalwa. Nou entèdi bay nenpòt kalite konsèy, eksplikasyon, opinyon, oswa rekòmandasyon bay yon konsomatè sou posib dwa legal, remèd, defans, opsyon, seleksyon fòm oswa estrateji. Nou pa predi rezilta epi nou pa responsab pou konnen si dokiman ou yo ase legalman oswa ou pa." : pathname.includes("es") ? "Immigration Sisters no es un bufete de abogados y no actúa como su abogado. Este servicio de preparación de documentos informativos y legales no sustituye el asesoramiento de un abogado. No podemos proporcionar asesoramiento legal y solo podemos proporcionar servicios de autoayuda según su dirección específica. No estamos autorizados a ejercer la abogacía. Está prohibido que proporcionemos cualquier tipo de consejo, explicación, opinión o recomendación a un consumidor sobre posibles derechos legales, remedios, defensas, opciones, selección de formularios o estrategias. No predecimos resultados y no tenemos responsabilidad de saber si sus documentos son legalmente suficientes o no." : "Immigration Sisterers is not law firm, and is not acting as your attorney. This informational and legal document preparation service is not a substitute for the advice of an attorney. We cannot provide legal advice and can only provide self-help services at your specific direction. We are not permitted to engage in the practice of law. We are prohibited from providing any kind of advice, explanation, opinion, or recommendation to a consumer about possible legal rights, remedies, defenses, options, selection of forms or strategies. We do not predict outcomes and have no responsibility to know whether your documents are legally sufficient or not."}</h3>
                             <div className="d-flex gap-3 mt-3">
                                 <i className="btn border-brown btn-md bi bi-instagram"></i>
                                 <i className="btn border-brown btn-md bi bi-facebook"></i>
@@ -272,7 +307,7 @@ const trainingData = [
                             <textarea type="text" rows="4" cols="10" className="form-control mb-3" placeholder="feedback" autoComplete="off" spellCheck="off" value={feedback} onChange={(e) => set_feedback(e.target.value || null)} />
                             <button className="btn bg-purple btn-md">Submit</button>
                         </form>
-                        <div style={{height: '400px', overflowY: 'scroll'}} className="d-none box_two form-group p-3 bg-shadow-sm bg-white rounded col-12 col-xl-5 col-md-6 col-sm-10">
+                        <div style={{height: '400px', overflowY: 'scroll'}} className="d-none box_two form-group p-3 bg-shadow-sm bg-white rounded col-5">
                             <h3 className="fs-5 lh-base mb-2">Chat With AI Assitant</h3>
                             <div className="row justify-content-between mb-3 position-relative">
                                 <div className="col-10">
@@ -299,6 +334,8 @@ const trainingData = [
                             <i className="bi bi-whatsapp bg-shadow-sm bg-white p-3 rounded fs-3 addHoverColor"></i>
                             <i className="bi bi-robot bg-shadow-sm bg-white p-3 rounded fs-3 addHoverColor"></i>
                         </div>
+                                                
+                        <a className="contact_us_btn" target="_blank" data-stringify-link="https://app.docketwise.com/firm_leads/public_new?uuid=22767686-7fab-4ffe-b2e2-5cb8bc563881" delay="150" data-sk="tooltip_parent" href="https://app.docketwise.com/firm_leads/public_new?uuid=22767686-7fab-4ffe-b2e2-5cb8bc563881" rel="noopener noreferrer">Contact Us</a>
                     </div>
                 </div>
             </div>

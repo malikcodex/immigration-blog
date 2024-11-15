@@ -68,6 +68,18 @@ const Header = ({title, keywords, description, meta = false}) =>  {
                                 <li><Link href={pathname.includes("hc") ? "/hc/contact-us" : pathname.includes("es") ? "/es/contact-us" : "/contact-us"} className='dropdown-item'>{pathname.includes("hc") ? "Kontakte Nou" : "Contact Us"}</Link></li>
                                 <li><Link href={pathname.includes("hc") ? "/hc/terms-of-service" : pathname.includes("es") ? "/es/terms-of-service" : "/terms-of-service"} className='dropdown-item'>{pathname.includes("hc") ? "Tèm Sèvis" : "Terms of service"}</Link></li>
                                 <li><Link href={pathname.includes("hc") ? "/hc/team" : pathname.includes("es") ? "/es/team" : "/team"} className='dropdown-item'><i className="bi bi-microsoft-teams"></i> {pathname.includes("hc") ? "Ekip" : "Team"}</Link></li>
+                                <select onChange={(e) => set_language(e.target.value || "en")} style={{width: '14%', padding: '3px', border: '1px solid #ccc', outline: 'none'}}>
+                                    <option value="">Lang</option>
+                                    {
+                                        ["en","es","hc"].map((d, k) => (
+                                            (d == lang || pathname.includes(d)) ? (
+                                                <option value={`${d}`} selected>{d == "hc" ? "Haithan Creola" : d == "es" ? "Spanish" : "English"}</option>
+                                            ) : (
+                                                <option value={`${d}`}>{d == "hc" ? "Haithan Creola" : d == "es" ? "Spanish" : "English"}</option>
+                                            )
+                                        ))
+                                    }
+                                </select>
                                 <li><Link href='/blog' className='dropdown-item'><i className="bi bi-journals"></i> {pathname.includes("hc") ? "Blòg" : "Blog"}</Link></li>
                             </ul>
                         </div>

@@ -327,7 +327,7 @@ const trainingData = [
                             <textarea type="text" rows="4" cols="10" className="form-control mb-3" placeholder="feedback" autoComplete="off" spellCheck="off" value={feedback} onChange={(e) => set_feedback(e.target.value || null)} />
                             <button className="btn bg-purple btn-md">Submit</button>
                         </form>
-                        <div style={{height: '400px', overflowY: 'scroll'}} className="d-none box_two form-group p-3 bg-shadow-sm bg-white rounded col-5">
+                        <div style={{height: '400px', overflowY: 'scroll'}} className="d-none box_two form-group p-3 bg-shadow-sm bg-white rounded col-xl-5 col-md-6 col-sm-10 col-12">
                             <h3 className="fs-5 lh-base mb-2">Chat With AI Assitant</h3>
                             <div className="row justify-content-between mb-3 position-relative">
                                 <div className="col-10">

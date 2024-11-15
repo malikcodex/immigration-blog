@@ -11,7 +11,7 @@ import { str_to_heading } from '@/core/util';
 import { getArticlesBySearch } from '@/core/db';
 import { useRouter } from 'next/router';
 
-const Support = () => {
+const Support = ({articles}) => {
     const router = useRouter();
     const [value, set_search] = useState(null);
     function set_search_btn(e) {
@@ -136,3 +136,12 @@ const Support = () => {
 }
 
 export default Support;
+export async function getServerSideProps(context) {
+    const {search} = context.query || null;
+    let articles = await getArticlesBySearch({search: search, category: 'support'});
+    return {
+        props: {
+            articles
+        }
+    }
+}

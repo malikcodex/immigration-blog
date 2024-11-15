@@ -7,7 +7,7 @@ body {
 }
 
 .bg-purple {
-    background: #8b82ed;
+    background: #8b82ed !important;
 }
 
 .bg-purple:hover {
@@ -15,7 +15,7 @@ body {
 }
 
 .bg-green {
-    background: #31eb6f;
+    background: #31eb6f !important;
 }
 
 .bg-green:hover {
@@ -23,7 +23,7 @@ body {
 }
 
 .bg-skin {
-    background: #ffceb1;
+    background: #ffceb1 !important;
 }
 
 .bg-skin:hover {
@@ -59,15 +59,32 @@ body {
 }
 
 .bg-brown {
-    background: #473f2b;
+    background: #473f2b !important;
 }
 
 .bg-yellow {
     background: rgb(255, 230, 3) !important;
 }
 
+.resize-none {
+    resize: none !important;
+}
+
 .border-brown {
     border: 1px solid #473f2b;
+}
+
+.disable {
+    opacity: 0.4 !important;
+    pointer-events: none !important;
+}
+
+.left-unstable {
+    right: 0;
+}
+
+.Zindex_add {
+    z-index: 1111111111;
 }
 
 .border-brown:hover {
@@ -155,6 +172,20 @@ body {
     filter: drop-shadow(2px 4px 6px black);
 }
 
+.transformX {
+    transform: translateX(-200px);
+}
+
+.addHoverColor {
+    color: #444;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+.addHoverColor:hover {
+    opacity: 0.6 !important;
+}
+
 @media screen and (max-width: 886px) {
     .hero_set {
         height: 130px;
@@ -191,4 +222,11 @@ body {
 
 ::-webkit-scrollbar-thumb {
     background: #2F2E0C !important;
+}
+
+.table_img {
+    display: flex;
+    height: 60px;
+    width: 60px;
+    object-fit: contain;
 }

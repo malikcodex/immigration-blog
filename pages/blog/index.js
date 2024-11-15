@@ -1,14 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Layout from '@/component/Layout';
-import sis_one from '@/public/images/items/blog-1.webp';
-import sis_two from '@/public/images/items/blog-2.webp';
-import blog_one from '@/public/images/items/blog-3.webp';
-import blog_two from '@/public/images/items/blog-4.webp';
-import blog_three from '@/public/images/items/blog-5.webp';
+import sis_one from '@/public/images/team/sis_2.jpeg';
+import sis_two from '@/public/images/team/sis_3.jpeg';
 import Image from 'next/image';
 import Link from 'next/link';
+import { getArticlesBySearch } from '@/core/db';
+import { make_msg, str_to_heading } from '@/core/util';
+import { useRouter } from 'next/router';
 
-const Blog = () => {
+const Blog = ({articles}) => {
+    const router = useRouter();
+    const [value, set_search] = useState(null);
+    function set_search_btn(e) {
+        e.preventDefault();
+        if(value !== null) {
+            router.push(`/blog?search=${value}`);
+        } else {
+            make_msg("Warning", "Please enter something to search ..", "error");
+            return false;
+        }
+    }
     return (
         <Layout title='Read Blog | Articles' description="Welcome to The Immigration Sisters Blog, where we share valuable insights, practical advice, and inspirational stories from the world of immigration. Here, you’ll find up-to-date news on immigration policies, in-depth guides to simplify your application process, and stories from individuals who’ve successfully navigated their journeys. Whether you're just beginning your immigration process or looking for tips on integrating into a new community, our blog is designed to provide the information and encouragement you need." meta='yes' keywords='Blog, Articles, Guides, News'>
             <div className='container-fluid'>
@@ -23,8 +34,9 @@ const Blog = () => {
                                spellCheck="false"
                                autoComplete='off'
                                placeholder="Search articles"
+                               onChange={(e) => set_search(e.target.value || null)}
                             />
-                            <button className="bg-purple text-brown btn btn-lg"><i className="bi bi-search"></i></button>
+                            <button onClick={(e) => set_search_btn(e)} className="bg-purple text-brown btn btn-lg"><i className="bi bi-search"></i></button>
                         </div>
                     </div>
                     <div className='col-xl-6 col-md-6 col-sm-12 col-12 pt-3 pt-sm-3 pt-md-0 pt-lg-0 pt-xl-0'>
@@ -53,51 +65,31 @@ const Blog = () => {
             <div className="col-12">
                 <div className="container-fluid">
                     <div className="row py-4">
-                        <div className="col-xl-4 col-md-6 col-sm-6 col-12 mb-3">
-                            <div className="p-3 bg-shadow-sm bg-white rounded">
-                                <Image
-                                    src={blog_one}
-                                    className='object-cover col-12 rounded h-lg mb-3'
-                                    width="600"
-                                    height="600"
-                                    alt="blog one"
-                                    loading='lazy'
-                                />
-                                <h1 className="fs-4 lh-base fw-bold mb-2">Building Engagement and Growing Your Audience</h1>
-                                <h2 className="fs-5 lh-base fw-normal mb-4">TikTok isn’t just for viral dances—it’s a powerful platform for building authentic connections and engaging with a massive global audience</h2>
-                                <h2 className="fs-6 lh-base fw-normal mb-2">10 Nov, 2024</h2>
-                            </div>
-                        </div>
-                        <div className="col-xl-4 col-md-6 col-sm-6 col-12 mb-3">
-                            <div className="p-3 bg-shadow-sm bg-white rounded">
-                                <Image
-                                    src={blog_three}
-                                    className='object-cover mb-3 col-12 rounded h-lg'
-                                    width="600"
-                                    height="600"
-                                    alt="blog two"
-                                    loading='lazy'
-                                />
-                                <h1 className="fs-4 lh-base fw-bold mb-2">Maximizing Your Facebook Presence - Tips for Success in 2024</h1>
-                                <h2 className="fs-5 lh-base fw-normal mb-4">With billions of users, Facebook remains a cornerstone for digital marketing and brand building. </h2>
-                                <h2 className="fs-6 lh-base fw-normal mb-2">10 Nov, 2024</h2>
-                            </div>
-                        </div>
-                        <div className="col-xl-4 col-md-6 col-sm-6 col-12 mb-3">
-                            <div className="p-3 bg-shadow-sm bg-white rounded">
-                                <Image
-                                    src={blog_two}
-                                    className='object-cover col-12 rounded h-lg mb-3'
-                                    width="600"
-                                    height="600"
-                                    alt="blog three"
-                                    loading='lazy'
-                                />
-                                <h1 className="fs-3 lh-base fw-bold mb-2">Building Engagement and Growing Your Audience</h1>
-                                <h2 className="fs-5 lh-base fw-normal mb-4">TikTok isn’t just for viral dances—it’s a powerful platform for building authentic connections and engaging with a massive global audience</h2>
-                                <h2 className="fs-6 lh-base fw-normal mb-2">10 Nov, 2024</h2>
-                            </div>
-                        </div>
+                        {
+                            articles && articles.notFound ? (
+                                <div className='col-xl-5'>
+                                    <h2>No Blog Articles Were Found</h2>
+                                </div>
+                            ) : articles.map((d, k) => (
+                                <div key={k} className="col-xl-4 col-md-6 col-sm-6 col-12 mb-3">
+                                    <div className="p-3 bg-shadow-sm bg-white rounded">
+                                        <Link href={`/blog/${d.slug}`}>
+                                            <Image
+                                                src={d.featured}
+                                                className='object-cover col-12 rounded h-lg mb-3'
+                                                width="600"
+                                                height="600"
+                                                alt="blog one"
+                                                loading='lazy'
+                                            />
+                                        </Link>
+                                        <h1 className="fs-4 lh-base fw-bold mb-2">{str_to_heading(d.title)}</h1>
+                                        <h2 className="fs-5 lh-base fw-normal mb-4">{d.desc.substring(0, 102) + '...'}</h2>
+                                        <h2 className="fs-6 lh-base fw-normal mb-2">{d.date}</h2>
+                                    </div>
+                                </div>
+                            ))
+                        }
                     </div>
                 </div>
             </div>
@@ -106,3 +98,12 @@ const Blog = () => {
 }
 
 export default Blog;
+export async function getServerSideProps(context) {
+    const {search} = context.query || null;
+    let articles = await getArticlesBySearch({search: search, category: 'blog'});
+    return {
+        props: {
+            articles
+        }
+    }
+}

@@ -40,13 +40,13 @@ const Contact = () => {
                            loading="lazy"
                            alt="image one"
                         />
-                        <h1 className="display-5 fw-bold lh-base"><span className="text-underline-purple">We’re Here for</span> <b className="text-italic text-bg-yellow">You!</b></h1>
-                        <h3 className="fs-4 fw-light lh-base">The Immigration Sisters are committed to providing compassionate and reliable support. Reach out to us with any concerns or feedback—your success and satisfaction are our top priorities.</h3>
+                        <h1 className="display-5 fw-bold lh-base"><span className="text-underline-purple">Estamos Aquí para</span> <b className="text-italic text-bg-yellow">Tú!</b></h1>
+                        <h3 className="fs-4 fw-light lh-base">Las Hermanas de Inmigración están comprometidas a proporcionar un apoyo compasivo y confiable. Comunícate con nosotros para cualquier inquietud o comentario; tu éxito y satisfacción son nuestras principales prioridades.</h3>
                     </div>
                     <div className='col-xl-6 col-md-6 col-sm-12 col-12'>
                         <form onSubmit={addSubmit} className="form-group">
-                            <h3 className="fs-2 lh-base fw-bold mb-2">Fill The Complete Form To React Us ?</h3>
-                            <h4 className="fs-5 lh-base mb-2">E-mail</h4>
+                            <h3 className="fs-2 lh-base fw-bold mb-2">Llena el formulario completo para contactarnos</h3>
+                            <h4 className="fs-5 lh-base mb-2">Correo Electrónico</h4>
                             <input
                                type="text"
                                className="form-control p-3 mb-3"
@@ -57,7 +57,7 @@ const Contact = () => {
                                value={email}
                             />
 
-                            <h4 className="fs-5 lh-base mb-2">Name</h4>
+                            <h4 className="fs-5 lh-base mb-2">Nombre</h4>
                             <input
                                type="text"
                                className="form-control p-3 mb-3"
@@ -68,7 +68,7 @@ const Contact = () => {
                                value={name}
                             />
 
-                            <h4 className="fs-5 lh-base mb-2">Subject</h4>
+                            <h4 className="fs-5 lh-base mb-2">Asunto</h4>
                             <input
                                type="text"
                                className="form-control p-3 mb-3"
@@ -79,7 +79,7 @@ const Contact = () => {
                                value={subject}
                             />
 
-                            <h4 className="fs-5 lh-base mb-2">Message</h4>
+                            <h4 className="fs-5 lh-base mb-2">Mensaje</h4>
                             <textarea
                                type="text"
                                className="form-control p-3 mb-3"
@@ -92,7 +92,7 @@ const Contact = () => {
                                value={message}
                             />
 
-                            <button className="btn bg-purple btn-lg">Submit</button>
+                            <button className="btn bg-purple btn-lg">Enviar</button>
                         </form>
                     </div>
                 </div>

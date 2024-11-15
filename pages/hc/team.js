@@ -13,8 +13,8 @@ const Home = () => {
             <div className='container-fluid'>
                 <div className='row align-items-center py-5 px-3'>
                     <div className='col-xl-6 col-md-6 col-sm-12 col-12'>
-                        <h1 className="display-5 fw-bold lh-base"><span className="text-underline-purple">Meet Our</span> <b className="text-italic text-bg-yellow">Team</b></h1>
-                        <h3 className="fs-4 fw-light lh-base">At The Immigration Sisters, our team is composed of skilled professionals dedicated to supporting you on your immigration journey. With a range of expertise in immigration law, cultural transitions, and case management, each team member is committed to providing personalized guidance and unwavering support.</h3>
+                        <h1 className="display-5 fw-bold lh-base"><span className="text-underline-purple">Rankontre Ekip Nou</span> <b className="text-italic text-bg-yellow">Ekip</b></h1>
+                        <h3 className="fs-4 fw-light lh-base">Nan Sè Imigrasyon yo, ekip nou an konpoze de pwofesyonèl kalifye ki dedye a sipòte ou nan vwayaj imigrasyon ou. Avèk yon varyete ekspètiz nan lwa imigrasyon, tranzisyon kiltirèl, ak jesyon ka, chak manm ekip angaje nan bay konsèy pèsonalize ak sipò san fay.</h3>
                     </div>
                     <div className='col-xl-6 col-md-6 col-sm-12 col-12'>
                         <div className='d-flex gap-3 mt-3'>
@@ -42,26 +42,26 @@ const Home = () => {
                     <div className="row py-4">
                         <div className="col-xl-6 col-md-6 col-sm-6 col-12 mb-3">
                             <div className='p-4 bg-shadow-sm border rounded'>
-                                <h3 className="fs-2 fw-bold lh-base mb-2">Personalized Consultations 🤝</h3>
-                                <h5 className="fs-4 lh-base mb-2">At The Immigration Sisters, we believe every story is unique. Our team offers personalized consultations to understand your goals and challenges, creating a customized path for your immigration journey.</h5>
+                                <h3 className="fs-2 fw-bold lh-base mb-2">Konsiltasyon Pèsonalize 🤝</h3>
+                                <h5 className="fs-4 lh-base mb-2">Nan Sè Imigrasyon yo, nou kwè chak istwa se inik. Ekip nou an ofri konsiltasyon pèsonalize pou konprann objektif ou ak defi yo, kreye yon chemen koutim pou vwayaj imigrasyon ou.</h5>
                             </div>
                         </div>
                         <div className="col-xl-6 col-md-6 col-sm-6 col-12 mb-3">
                             <div className='p-4 bg-shadow-sm border rounded'>
-                                <h3 className="fs-2 fw-bold lh-base mb-2">Expert Case Management 📂 </h3>
-                                <h5 className="fs-4 lh-base mb-2">Our case managers keep every detail in check, managing documentation and timelines with precision. We ensure that all your paperwork is organized and meets the required standards.</h5>
+                                <h3 className="fs-2 fw-bold lh-base mb-2">Jesyon Ka Ekspè 📂 </h3>
+                                <h5 className="fs-4 lh-base mb-2">"Manadjè ka nou yo kenbe chak detay anba kontwòl, jere dokiman ak delè avèk presizyon. Nou asire ke tout papye ou yo òganize epi satisfè estanda yo mande yo.</h5>
                             </div>
                         </div>
                         <div className="col-xl-6 col-md-6 col-sm-6 col-12 mb-3">
                             <div className='p-4 bg-shadow-sm border rounded'>
-                                <h3 className="fs-2 fw-bold lh-base mb-2">Transparent Process Updates 🔄</h3>
-                                <h5 className="fs-4 lh-base mb-2">We know that waiting can be stressful. That’s why our team keeps you updated on the progress of your case, providing regular insights and clear communication so you’re never in the dark.</h5>
+                                <h3 className="fs-2 fw-bold lh-base mb-2">Mizajou Pwosesis Transparan 🔄</h3>
+                                <h5 className="fs-4 lh-base mb-2">"Nou konnen tann ka estrès. Se poutèt sa ekip nou an kenbe w enfòme sou pwogrè ka w la, bay enfòmasyon regilye ak kominikasyon klè pou w pa janm rete nan fènwa.</h5>
                             </div>
                         </div>
                         <div className="col-xl-6 col-md-6 col-sm-6 col-12 mb-3">
                             <div className='p-4 bg-shadow-sm border rounded'>
-                                <h3 className="fs-2 fw-bold lh-base mb-2">Post-Immigration Support Services</h3>
-                                <h5 className="fs-4 lh-base mb-2">Beyond immigration, we assist with essential services like job search guidance, community resources, and acclimation support. The Immigration Sisters are committed to helping you feel at home.</h5>
+                                <h3 className="fs-2 fw-bold lh-base mb-2">Sèvis Sipò apre Imigrasyon</h3>
+                                <h5 className="fs-4 lh-base mb-2">"Anplis imigrasyon, nou ede ak sèvis esansyèl tankou gid rechèch travay, resous kominotè, ak sipò adaptasyon. Sè Imigrasyon yo angaje pou ede w santi w lakay ou.</h5>
                             </div>
                         </div>
                     </div>
@@ -73,11 +73,11 @@ const Home = () => {
                     <div className='row py-4'>
                         <div className="col-xl-6 col-md-6 col-sm-12 col-12 d-flex justify-content-center align-items-center">
                             <div className="p-3">
-                                <h2 className="fs-1 fw-bold text-brown lh-base mb-3">Cultural  <b className="text-underline-purple">Integration</b> <b className="text-italic text-bg-yellow">Assistance  </b> 🌍</h2>
-                                <h3 className="fs-4 fw-normal text-brown lh-base mb-1">Helping You Feel at Home in a New Country</h3>
-                                <h4 className="fs-5 fw-light text-brown lh-base mb-4">Moving to a new country can be challenging. Our cultural integration specialists help you adapt to local customs, find resources, and build a strong foundation in your new community.</h4>
+                                <h2 className="fs-1 fw-bold text-brown lh-base mb-3">Kiltirèl  <b className="text-underline-purple">Integration</b> <b className="text-italic text-bg-yellow">Asistans  </b> 🌍</h2>
+                                <h3 className="fs-4 fw-normal text-brown lh-base mb-1">Ede w Santi w Lakay ou nan yon Nouvo Peyi</h3>
+                                <h4 className="fs-5 fw-light text-brown lh-base mb-4">"Deplase nan yon nouvo peyi ka difisil. Espesyalis entegre kiltirèl nou yo ede ou adapte ak koutim lokal yo, jwenn resous, epi bati yon fondasyon solid nan nouvo kominote w la.</h4>
                                 <div className="d-flex">
-                                    <Link href='/about-us' className="btn bg-purple text-white btn-lg">Support</Link>
+                                    <Link href='/about-us' className="btn bg-purple text-white btn-lg">Sipò</Link>
                                 </div>
                             </div>
                         </div>

@@ -15,10 +15,10 @@ const Home = () => {
             <div className='container-fluid'>
                 <div className='row align-items-center py-5 px-3'>
                     <div className='col-xl-6 col-md-6 col-sm-12 col-12'>
-                        <h1 className="display-5 fw-bold lh-base"><span className="text-underline-purple">The Immigration</span> <b className="text-italic text-bg-yellow">Sisters</b></h1>
-                        <h2 className="fs-2 fw-normal lh-base">Empowering Immigrants with Trusted Support and Expertise</h2>
-                        <h3 className="fs-4 fw-light lh-base mb-5">The Immigration Sisters provide personalized guidance to help you navigate the complexities of immigration. With deep expertise and a commitment to your success, we’re here to support you at every stage, ensuring a smoother path to achieving your dreams.</h3>
-                        <Link href="/team" className="mt-3 text-decoration-none rounded  bg-purple px-3 py-3 text-white fw-bold fs-5"><i className="bi bi-microsoft-teams"></i> Meet Our Team</Link>
+                        <h1 className="display-5 fw-bold lh-base"><span className="text-underline-purple">Imigrasyon an</span> <b className="text-italic text-bg-yellow">Sè</b></h1>
+                        <h2 className="fs-2 fw-normal lh-base">Bay Imigran yo Pouvwa ak Sipò ak Ekspètiz ou Konfyans</h2>
+                        <h3 className="fs-4 fw-light lh-base mb-5">Sè Imigrasyon yo bay konsèy pèsonalize pou ede w navige konplèksite imigrasyon an. Avèk gwo ekspètiz ak yon angajman pou siksè ou, nou la pou sipòte ou nan chak etap, asire yon chemen plis lis pou reyalize rèv ou.</h3>
+                        <Link href="/team" className="mt-3 text-decoration-none rounded  bg-purple px-3 py-3 text-white fw-bold fs-5"><i className="bi bi-microsoft-teams"></i> Rankontre Ekip Nou</Link>
                     </div>
                     <div className='col-xl-6 col-md-6 col-sm-12 col-12'>
                         <div className='d-flex gap-3 mt-5'>
@@ -48,8 +48,8 @@ const Home = () => {
                     <div className="row justify-content-center">
                         <div className='col-xl-8 col-lg-9 col-md-9 col-sm-12 col-12'>
                             <div className="p-2">
-                                <h2 className="display-5 fw-bold text-white text-center lh-base">Your Trusted Partners in Immigration Success</h2>
-                                <h4 className="fs-3 fw-normal text-white text-center lh-base">The Immigration Sisters offer dedicated support and professional advice to make your immigration journey straightforward and stress-free. We’re here to empower you with knowledge and navigate challenges together, helping you achieve your goals with confidence.</h4>
+                                <h2 className="display-5 fw-bold text-white text-center lh-base">Patnè Konfyans ou nan Siksè Imigrasyon</h2>
+                                <h4 className="fs-3 fw-normal text-white text-center lh-base">"Sè Imigrasyon yo ofri sipò dedye ak konsèy pwofesyonèl pou fè vwayaj imigrasyon ou dirèk ak san estrès. Nou la pou ba w pouvwa ak konesans ak navige defi yo ansanm, ede w reyalize objektif ou ak konfyans.</h4>
                             </div>
                         </div>
                     </div>
@@ -99,30 +99,30 @@ const Home = () => {
                     <div className="row py-4">
                         <div className="col-xl-3 col-md-4 col-sm-6 col-12">
                             <div className='p-3 bg-shadow-sm bg-white'>
-                                <h3 className="fs-4 fw-bold lh-base mb-2">Comprehensive Immigration</h3>
-                                <h4 className="fs-5 lh-base mb-2">Personalized Advice Tailored to Your Needs</h4>
-                                <h5 className="fs-6 lh-base mb-2">The Immigration Sisters offer in-depth consultations to understand your unique situation and goals. With customized strategies, we guide you through the initial steps, ensuring you're well-prepared and informed for the journey ahead.</h5>
+                                <h3 className="fs-4 fw-bold lh-base mb-2">Imigrasyon konplè</h3>
+                                <h4 className="fs-5 lh-base mb-2">"Konsèy Pèsonalize adapte ak Bezwen ou</h4>
+                                <h5 className="fs-6 lh-base mb-2">Sè Imigrasyon yo ofri konsiltasyon apwofondi pou konprann sitiyasyon inik ou ak objektif ou. Avèk estrateji koutim, nou gide w nan premye etap yo, asire w ke w byen prepare epi enfòme pou vwayaj la devan ou.</h5>
                             </div>
                         </div>
                         <div className="col-xl-3 col-md-4 col-sm-6 col-12">
                             <div className='p-3 bg-shadow-sm bg-white'>
-                                <h3 className="fs-4 fw-bold lh-base mb-2">Step-by-Step Application Assistance</h3>
-                                <h4 className="fs-5 lh-base mb-2">Support from Document Preparation to Submission</h4>
-                                <h5 className="fs-6 lh-base mb-2">We simplify the application process, assisting you with document collection, form completion, and submission. Our team is here to ensure every detail meets the necessary requirements, so your application has the best chance of success.</h5>
+                                <h3 className="fs-4 fw-bold lh-base mb-2">Asistans Aplikasyon Pas a Pas</h3>
+                                <h4 className="fs-5 lh-base mb-2">Sipò soti nan Preparasyon Dokiman pou soumèt</h4>
+                                <h5 className="fs-6 lh-base mb-2">Nou senplifye pwosesis aplikasyon an, ede w ak koleksyon dokiman, konplete fòm, ak soumèt. Ekip nou an isit pou asire chak detay satisfè egzijans ki nesesè yo, pou aplikasyon w lan gen pi bon chans pou reyisi.</h5>
                             </div>
                         </div>
                         <div className="col-xl-3 col-md-4 col-sm-6 col-12">
                             <div className='p-3 bg-shadow-sm bg-white'>
-                                <h3 className="fs-4 fw-bold lh-base mb-2">Expert Visa & Residency Guidance</h3>
-                                <h4 className="fs-5 lh-base mb-2">Navigate Complex Requirements with Confidence</h4>
-                                <h5 className="fs-6 lh-base mb-2">Our expertise covers various visa types and residency options, helping you understand and choose the best pathway. We break down complex regulations and keep you updated on any changes, ensuring you’re always a step ahead.</h5>
+                                <h3 className="fs-4 fw-bold lh-base mb-2">Gid Ekspè pou Viza ak Rezidans</h3>
+                                <h4 className="fs-5 lh-base mb-2">Navige Kondisyon Konplèks yo ak Konfyans</h4>
+                                <h5 className="fs-6 lh-base mb-2">Ekspètiz nou kouvri diferan kalite viza ak opsyon rezidans, ede w konprann epi chwazi pi bon chemen an. Nou dekoupaj regilasyon konplèks yo epi kenbe w enfòme sou nenpòt chanjman, asire w ke w toujou yon etap devan.</h5>
                             </div>
                         </div>
                         <div className="col-xl-3 col-md-4 col-sm-6 col-12">
                             <div className='p-3 bg-shadow-sm bg-white'>
-                                <h3 className="fs-4 fw-bold lh-base mb-2">Post-Immigration Support Services</h3>
-                                <h4 className="fs-5 lh-base mb-2">Helping You Settle and Thrive in Your New Home</h4>
-                                <h5 className="fs-6 lh-base mb-2">Beyond immigration, we assist with essential services like job search guidance, community resources, and acclimation support. The Immigration Sisters are committed to helping you feel at home, empowering you to thrive in your new environment.</h5>
+                                <h3 className="fs-4 fw-bold lh-base mb-2">Sèvis Sipò apre Imigrasyon</h3>
+                                <h4 className="fs-5 lh-base mb-2">Ede w Enstale ak Pwospere nan Nouvo Kay ou</h4>
+                                <h5 className="fs-6 lh-base mb-2">Anplis imigrasyon, nou ede ak sèvis esansyèl tankou gid rechèch travay, resous kominotè, ak sipò adaptasyon. Sè Imigrasyon yo angaje pou ede w santi w lakay ou, ba w pouvwa pou w pwospere nan nouvo anviwònman ou.</h5>
                             </div>
                         </div>
                     </div>
@@ -134,11 +134,11 @@ const Home = () => {
                     <div className='row'>
                         <div className="col-xl-6 col-md-6 col-sm-12 col-12 d-flex justify-content-center align-items-center">
                             <div className="p-3">
-                                <h2 className="fs-2 fw-bold text-brown lh-base mb-1">Trusted <b className="text-underline-purple">Advocacy</b> for <b className="text-italic text-bg-yellow">Complex </b> Cases</h2>
-                                <h3 className="fs-4 fw-normal text-brown lh-base mb-1">Specialized Support for Challenging Immigration Matters</h3>
-                                <h4 className="fs-5 fw-light text-brown lh-base mb-4">For unique or complex cases, The Immigration Sisters provide focused advocacy and strategic solutions. We work closely with you to overcome obstacles, leveraging our experience to handle appeals, waivers, and specialized cases with dedication and expertise.</h4>
+                                <h2 className="fs-2 fw-bold text-brown lh-base mb-1">Konfyans <b className="text-underline-purple">Pledwaye</b> pou <b className="text-italic text-bg-yellow">Konplèks </b> Ka</h2>
+                                <h3 className="fs-4 fw-normal text-brown lh-base mb-1">Sipò Espesyalize pou Zafè Imigrasyon Difisil</h3>
+                                <h4 className="fs-5 fw-light text-brown lh-base mb-4">Pou ka inik oswa konplèks, Sè Imigrasyon yo bay pledwaye konsantre ak solisyon estratejik. Nou travay sere sere avèk ou pou simonte obstak yo, sèvi ak eksperyans nou pou jere apèl, egzansyon, ak ka espesyalize ak devouman ak ekspètiz.</h4>
                                 <div className="d-flex">
-                                    <Link href='/about-us' className="btn bg-green text-brown btn-lg">About Us</Link>
+                                    <Link href='/about-us' className="btn bg-green text-brown btn-lg">Konsènan Nou</Link>
                                 </div>
                             </div>
                         </div>
@@ -164,25 +164,25 @@ const Home = () => {
                          <div className="col-xl-3 col-md-4 col-sm-6 col-12 mb-3">
                             <div className="bg-yellow p-5 bg-shadow-sm">
                                 <h2 className="fs-1 lh-base fw-bold mb-1">99.7%</h2>
-                                <h3 className="fs-5 lh-base fw-normal mb-2">Success Rate</h3>
+                                <h3 className="fs-5 lh-base fw-normal mb-2">Pousantaj Siksè</h3>
                             </div>
                         </div>
                         <div className="col-xl-3 col-md-4 col-sm-6 col-12 mb-3">
                             <div className="bg-yellow p-5 bg-shadow-sm">
                                 <h2 className="fs-1 lh-base fw-bold mb-1">100,000</h2>
-                                <h3 className="fs-5 lh-base fw-normal mb-2">Immigrants Helped</h3>
+                                <h3 className="fs-5 lh-base fw-normal mb-2">Imigran Ede</h3>
                             </div>
                         </div>
                         <div className="col-xl-3 col-md-4 col-sm-6 col-12 mb-3">
                             <div className="bg-yellow p-5 bg-shadow-sm">
                                 <h2 className="fs-1 lh-base fw-bold mb-1">4.7%</h2>
-                                <h3 className="fs-5 lh-base fw-normal mb-2">Trustpilot Reviews</h3>
+                                <h3 className="fs-5 lh-base fw-normal mb-2">Revizyon Trustpilot</h3>
                             </div>
                         </div>
                         <div className="col-xl-3 col-md-4 col-sm-6 col-12 mb-3">
                             <div className="bg-yellow p-5 bg-shadow-sm">
                                 <h2 className="fs-1 lh-base fw-bold mb-1">A+</h2>
-                                <h3 className="fs-5 lh-base fw-normal mb-2">BBB Accredidation</h3>
+                                <h3 className="fs-5 lh-base fw-normal mb-2">Akreditasyon BBB</h3>
                             </div>
                         </div>
                      </div>

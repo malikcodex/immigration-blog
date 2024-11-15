@@ -14,8 +14,8 @@ const Support = () => {
             <div className='container-fluid'>
                 <div className='row align-items-center py-5 px-3'>
                     <div className='col-xl-6 col-md-6 col-sm-12 col-12'>
-                        <h1 className="display-5 fw-bold lh-base"><span className="text-underline-skin">How Can We Help </span> <b className="text-italic text-bg-skin">You?</b></h1>
-                        <h3 className="fs-4 fw-light lh-base">At The Immigration Sisters, we’re dedicated to making your experience as seamless as possible. Whether you have questions, need guidance, or want updates on your case, our support team is here to assist every step of the way.</h3>
+                        <h1 className="display-5 fw-bold lh-base"><span className="text-underline-skin">Kijan Nou Ka Ede </span> <b className="text-italic text-bg-skin">Ou?</b></h1>
+                        <h3 className="fs-4 fw-light lh-base">Nan Sè Imigrasyon, nou angaje pou fè eksperyans ou a pi senp posib. Kit ou gen kesyon, bezwen konsèy, oswa vle mizajou sou ka ou, ekip sipò nou an la pou ede ou nan chak etap.</h3>
                         <div className="input-group bg-shadow-sm mt-4 rounded">
                             <input
                                type="text"
@@ -55,26 +55,26 @@ const Support = () => {
                     <div className="row py-4">
                         <div className="col-xl-6 col-md-6 col-sm-6 col-12 mb-3">
                             <div className='p-4 bg-shadow-sm bg-skin border rounded'>
-                                <h3 className="text-dark fs-2 fw-bold lh-base mb-2">Frequently Asked Questions (FAQ) </h3>
-                                <h5 className="text-dark fs-4 lh-base mb-2">Visit our <Link href="/support" className="btn btn-md bg-purple text-brown">SUPPORT PAGE</Link> for answers to common questions about our services, application processes, documentation requirements, and more. The FAQ section is a quick way to find information anytime you need it.</h5>
+                                <h3 className="text-dark fs-2 fw-bold lh-base mb-2">Kesyon Souvan Poze (FAQ) </h3>
+                                <h5 className="text-dark fs-4 lh-base mb-2">Vizite nou <Link href="/hc/support" className="btn btn-md bg-purple text-brown">SUPPORT PAGE</Link> pou repons sou kesyon komen sou sèvis nou yo, pwosesis aplikasyon, kondisyon dokimantasyon, ak plis ankò. Seksyon FAQ a se yon fason rapid pou jwenn enfòmasyon nenpòt lè ou bezwen li.</h5>
                             </div>
                         </div>
                         <div className="col-xl-6 col-md-6 col-sm-6 col-12 mb-3">
                             <div className='p-4 bg-shadow-sm bg-purple border rounded'>
-                                <h3 className="text-white fs-2 fw-bold lh-base mb-2">Expert Case Management 📂 </h3>
-                                <h5 className="text-white fs-4 lh-base mb-2">Our case managers keep every detail in check, managing documentation and timelines with precision. We ensure that all your paperwork is organized and meets the required standards.</h5>
+                                <h3 className="text-white fs-2 fw-bold lh-base mb-2">Jesyon Ka Ekspè 📂 </h3>
+                                <h5 className="text-white fs-4 lh-base mb-2">Manadjè ka nou yo kenbe chak detay an tcheke, jere dokiman ak delè avèk presizyon. Nou asire ke tout papye ou òganize e ke yo satisfè estanda yo mande yo.</h5>
                             </div>
                         </div>
                         <div className="col-xl-6 col-md-6 col-sm-6 col-12 mb-3">
                             <div className='p-4 bg-shadow-sm bg-brown border rounded'>
-                                <h3 className="text-white fs-2 fw-bold lh-base mb-2">Transparent Process Updates 🔄</h3>
-                                <h5 className="text-white fs-4 lh-base mb-2">We know that waiting can be stressful. That’s why our team keeps you updated on the progress of your case, providing regular insights and clear communication so you’re never in the dark.</h5>
+                                <h3 className="text-white fs-2 fw-bold lh-base mb-2">Mizajou Pwosesis Transparan</h3>
+                                <h5 className="text-white fs-4 lh-base mb-2">Nou konnen ke tann kapab strese. Se poutèt sa ekip nou an kenbe ou enfòme sou pwogrè ka ou a, bay mizajou regilye ak kominikasyon klè pou ou pa janm nan fè nwa.</h5>
                             </div>
                         </div>
                         <div className="col-xl-6 col-md-6 col-sm-6 col-12 mb-3">
                             <div className='p-4 bg-shadow-sm bg-green border rounded'>
-                                <h3 className="text-white fs-2 fw-bold lh-base mb-2">Post-Immigration Support Services</h3>
-                                <h5 className="text-white fs-4 lh-base mb-2">Beyond immigration, we assist with essential services like job search guidance, community resources, and acclimation support. The Immigration Sisters are committed to helping you feel at home.</h5>
+                                <h3 className="text-white fs-2 fw-bold lh-base mb-2">Sèvis Sipò Aprè Imigrasyon</h3>
+                                <h5 className="text-white fs-4 lh-base mb-2">Anplis imigrasyon, nou ede ak sèvis esansyèl tankou gid rechèch travay, resous kominotè, ak sipò aklimatasyon. Sè Imigrasyon yo angaje pou ede ou santi ou alèz lakay ou.</h5>
                             </div>
                         </div>
                     </div>
@@ -86,10 +86,10 @@ const Support = () => {
                     <div className='row py-4'>
                         <div className="col-xl-6 col-md-6 col-sm-12 col-12 d-flex justify-content-center align-items-center">
                             <div className="p-3">
-                                <h2 className="fs-1 fw-bold text-brown lh-base mb-3">Case Updates and <b className="text-underline-purple">Application Status</b> <b className="text-italic text-bg-yellow">Assistance  </b> </h2>
-                                <h4 className="fs-5 fw-light text-brown lh-base mb-4">Explore our resource center for articles, guides, and tips that can help you understand the immigration process better. We cover everything from document preparation to settling in your new home.</h4>
+                                <h2 className="fs-1 fw-bold text-brown lh-base mb-3">Mizajou Ka ak <b className="text-underline-purple">Estati Aplikasyon</b> <b className="text-italic text-bg-yellow">Asistans  </b> </h2>
+                                <h4 className="fs-5 fw-light text-brown lh-base mb-4">Eksplore sant resous nou an pou atik, gid, ak konsèy ki ka ede w konprann pwosesis imigrasyon an pi byen. Nou kouvri tout bagay soti nan preparasyon dokiman jiskaske ou enstale nan nouvo kay ou.</h4>
                                 <div className="d-flex">
-                                    <Link href='/blog' className="btn bg-purple text-white btn-lg">Blogs</Link>
+                                    <Link href='/hc/blog' className="btn bg-purple text-white btn-lg">Blòg</Link>
                                 </div>
                             </div>
                         </div>

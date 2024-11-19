@@ -298,7 +298,7 @@ export async function getArticleById({id}) {
 export async function getArticlesBySlug({slug}) {
     let db = await connectDatabase();
     try {
-        let find = await db.collection("articles").find({slug: slug}).toArray();
+        let find = await db.collection("articles").find({slug: slug}).limit(1).toArray();
         if(!find || find.length === 0) {
             return {
                 notFound: true

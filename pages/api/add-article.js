@@ -56,9 +56,9 @@ export default async function handler(req, res) {
         let query;
         let objectId = id != null ? new ObjectId(id) : null;
         if(id == null) {
-            query = {title: title, category: category};
+            query = {title: title, category: category, slug: slug};
         } else {
-            query = {title: title, category: category, _id: {$ne: objectId}};
+            query = {title: title, category: category, slug: slug, _id: {$ne: objectId}};
         }
 
         let db = await connectDatabase();

@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '@/component/Layout';
-import sis_one from '@/public/images/team/sis_13.jpeg';
-import sis_two from '@/public/images/team/sis_12.jpeg';
+import sis_one from '@/public/images/team/img_19.jpg';
+import sis_two from '@/public/images/team/img_20.jpg';
 import sis_three from '@/public/images/team/sis_15.png';
 import sis_four from '@/public/images/team/sis_7.jpeg';
 import sis_five from '@/public/images/team/sis_8.jpeg';
@@ -9,7 +9,7 @@ import imigration from '@/public/images/team/sis_14.jpeg';
 import Image from 'next/image';
 import Link from 'next/link';
 
-const Home = () => {
+const AboutUs = () => {
     return (
         <Layout title='About Us' description='To empower, inform, and support individuals and families through every step of the immigration process, from initial consultation to settling into a new community. We believe in simplifying complex immigration procedures, so you can focus on your goals with confidence.' meta='yes' keywords='aboutus, our services, immigration details'>
             <div className='col-12 bg-skin'>
@@ -135,4 +135,4 @@ const Home = () => {
     )
 }
 
-export default Home;
+export default AboutUs;

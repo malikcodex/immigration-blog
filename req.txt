@@ -1,0 +1,46 @@
+!Note Please watch the complete video 
+to see the complete dashboard testing. 
+Lets start it now. 
+I loged in to admin dashboard and you can see
+that there are a lot of different options to manage
+website. Lets try them all and check how data is gonna be 
+look like.
+
+1.Lets see when any user need to contact how can we check the response.
+2.Now lets see how can we publish articles only . Now you need to
+add title , add slug means url and featured image
+3.Now by default there are four categories . Which you dont need to delete
+4.Because i split the articles content into four parts. Like blog, event
+guide and support . So lets see first how to manage categories then we will
+come back to the articles section. Let me delete all of them and add again.
+I will add the four of them again. Now the blog category will be depend on
+the articles section. System will also check for the duplicates
+so feel free from that side.
+Now lets add support, event, guide . Lets upload the first article
+and please see the complete upload .
+Now Content boxes means that you can add more boxes repeatidily to fill
+information for the article . Which is very easy to use .Let me show you
+You can add mulitple points for every single content box
+You can also add multiple tags by seperating them with comma
+You can also add disclaimer message . But before this let me add one more
+content box. Now you see that when i click on add more boxes 
+we get another content box with points and same other fields
+lets publish the first article in blog category
+System everytime check for the duplicates . So in this case 
+system is robust and can handle eveything . Now in same way by selecting support
+category . You can add article for support center. Through which users 
+can see the difference in regular blog article and support article
+Lets check them onto the frontend
+These both are different articles based on there category. 
+Ok for now articles, support, guide and other sections are completed
+Lets check all of the remaining sections
+Now there is a feedback section . Where we can see the users feedback 
+with there email, username, feedback and device information
+Ok i will check the delete feature again . But data is displaying properly 
+so lets move onwards to the remaing sections
+System will check for the current 30 days and split the performance
+into four parts
+Now you can also add new questiona and answers for your chatbot learning
+So lets logout from the backend panel now. 
+Eveytthing is fine just i will recheck the delete feature for every section
+Thansk!. I think it is enough to learn through this detaied clip

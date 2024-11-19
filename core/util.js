@@ -35,14 +35,15 @@ export function getPagination(data, page = 1) {
         let splice = data.splice(start, limit);
         return {
             "data": splice,
-            "page": page,
-            "per_page": per_page,
-            "next_page": next_page,
-            "prev_page": prev_page,
+            "page": parseFloat(page),
+            "per_page": parseFloat(per_page),
+            "next_page": parseFloat(next_page),
+            "prev_page": parseFloat(prev_page),
             "next_disable": next_disable,
             "prev_disable": prev_disable,
-            "total": per_page,
-            "count": count
+            "total": parseFloat(per_page),
+            "count": parseFloat(count),
+            "total_pages": parseFloat(per_page)
         }
     } else {
         return {

@@ -69,16 +69,15 @@ export async function getAllFeedbacks({id, search}) {
     let db = await connectDatabase();
     try {
         let find;
+        find = await db.collection("feedbacks").find({}).toArray();
         if(id != null && id != '') {
             let objectId = new ObjectId(id);
-            find = await db.collection("feedbacks").find({_id: objectId}).toArray();
+            await db.collection("feedbacks").deleteOne({_id: objectId});
         } else if(search != null && search != '') {
             find = await db.collection("feedbacks").find({$or: [
                 {username: {$regex: search, $options: "i"}},
                 {email: {$regex: search, $options: "i"}}
             ]}).toArray();
-        } else {
-            find = await db.collection("feedbacks").find({}).toArray();
         }
         
         if(!find || find.length <= 0) {

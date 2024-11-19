@@ -398,7 +398,7 @@ const trainingData = [
                 <div className="row">
                     <div className="col-12">
                         <form onSubmit={addFbSubmit} className="d-none box_one form-group p-3 bg-shadow-sm bg-white rounded">
-                            <input type="text" className="form-control mb-3" placeholder="email username" autoComplete="off" spellCheck="off" value={fb_username} onChange={(e) => set_fb_username(e.target.value || null)} />
+                            <input type="text" className="form-control mb-3" placeholder="username" autoComplete="off" spellCheck="off" value={fb_username} onChange={(e) => set_fb_username(e.target.value || null)} />
                             <input type="email" className="form-control mb-3" placeholder="email address" autoComplete="off" spellCheck="off" value={fb_email} onChange={(e) => set_fb_email(e.target.value || null)} />
                             <textarea type="text" rows="4" cols="10" className="form-control mb-3" placeholder="feedback" autoComplete="off" spellCheck="off" value={feedback} onChange={(e) => set_feedback(e.target.value || null)} />
                             <button className="btn bg-purple btn-md">Submit</button>

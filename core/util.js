@@ -27,8 +27,12 @@ export function getPagination(data, page = 1) {
         let next_page = page + 1;
         let prev_page = page - 1;
         let prev_disable = page <= 1 ? "disable" : "";
-        let next_disable = page <= per_page ? "disable" : "";
-        let splice = data.slice(start, limit);
+        let next_disable = page > per_page ? "disable" : "";
+        // console.log(typeof start)
+        // console.log(typeof limit);
+        // console.log(start);
+        // console.log(limit);
+        let splice = data.splice(start, limit);
         return {
             "data": splice,
             "page": page,
@@ -116,7 +120,15 @@ export function make_msg(action , msg , status) {
 
 export function change_str_to_title(str) {
     if(str) {
-        return str.replaceAll(/[^A-Za-z0-9:.@\?\'\"\!\,\*]/ig, ' ').replaceAll(/\s+/ig, ' ').toLowerCase();
+        return str.replaceAll(/[^A-Za-z0-9:.@\?\"\!\,\*]/ig, ' ').replaceAll(/\s+/ig, ' ').toLowerCase();
+    }
+
+    return null;
+}
+
+export function clean_str(str) {
+    if(str) {
+        return str.replaceAll(/[^A-Za-z0-9]/ig, ' ').replaceAll(/\s+/ig, ' ').toLowerCase();
     }
 
     return null;
@@ -124,4 +136,20 @@ export function change_str_to_title(str) {
 
 export function str_to_heading(str) {
     return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
+export function nothing_found(str) {
+    return str == '' ? "Nothing Found" : str;
+}
+
+export function set_status(str) {
+    str == 1 ? "Active" : "Deactive";
+}
+
+export function remove_dash(str) {
+    try {
+        return str.replace(/\-/i, ' ');
+    } catch(error) {
+        return '';
+    }
 }

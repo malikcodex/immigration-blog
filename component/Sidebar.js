@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-
-export default function SetSidebar() {
+import withAuth from '@/component/withAuth';
+function SetSidebar() {
     const router = useRouter();
     return (
         <div className="col-xl-3 col-md-4 col-sm-6 col-12">
@@ -14,8 +14,12 @@ export default function SetSidebar() {
                 {/* <Link className={`${router.route == "/admin/profile" || router.route == "/admin/change-password"  ? "bg-purple text-white" : "btn-regular text-dark"} btn lh-base fs-5 mb-3 col-12 text-start`} href="/admin/profile">Profile</Link> */}
                 <Link className={`${router.route == "/admin/feedbacks"  ? "bg-purple text-white" : "btn-regular text-dark"} btn lh-base fs-5 mb-3 col-12 text-start`} href="/admin/feedbacks">Feedbacks</Link>
                 <Link className={`${router.route == "/admin/performance"  ? "bg-purple text-white" : "btn-regular text-dark"} btn lh-base fs-5 mb-3 col-12 text-start`} href="/admin/performance">Site Performance</Link>
-                {/* <Link className={`${router.route == "/admin/logout"  ? "bg-purple text-white" : "btn-regular text-dark"} btn lh-base fs-5 mb-3 col-12 text-start`} href="/admin/logout">Logout</Link> */}
+                <Link className={`${router.route == "/admin/add-socials"  ? "bg-purple text-white" : "btn-regular text-dark"} btn lh-base fs-5 mb-3 col-12 text-start`} href="/admin/add-socials">Social Links</Link>
+                <Link className={`${router.route == "/admin/questions"  ? "bg-purple text-white" : "btn-regular text-dark"} btn lh-base fs-5 mb-3 col-12 text-start`} href="/admin/questions">Question & Answers</Link>
+                <Link className={`${router.route == "/admin/logout"  ? "bg-purple text-white" : "btn-regular text-dark"} btn lh-base fs-5 mb-3 col-12 text-start`} href="/admin/logout">Logout</Link>
             </div>
         </div>
     )
 }
+
+export default withAuth(SetSidebar);

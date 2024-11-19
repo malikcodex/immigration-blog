@@ -148,7 +148,7 @@ const Home = () => {
                                     src={imigration}
                                     height="500"
                                     width="500"
-                                    className="hero_set"
+                                    className="h-full object-contain"
                                     loading='lazy'
                                     alt="immigration image"
                                 />

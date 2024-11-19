@@ -1,6 +1,7 @@
 import { MongoClient, ObjectId, ServerApiVersion } from 'mongodb';
 import { notFound } from 'next/navigation';
 import cloudinary from 'cloudinary';
+import { remove_dash } from './util';
 
 cloudinary.v2.config({
     cloud_name: process.env.CLOUDNAME || "dfvn8crqd",
@@ -64,10 +65,22 @@ export async function upload_image_to_cloudinary({image}) {
     }
 }
 
-export async function getAllFeedbacks() {
+export async function getAllFeedbacks({id, search}) {
     let db = await connectDatabase();
     try {
-        let find = await db.collection("feedbacks").find({}).toArray();
+        let find;
+        if(id != null && id != '') {
+            let objectId = new ObjectId(id);
+            find = await db.collection("feedbacks").find({_id: objectId}).toArray();
+        } else if(search != null && search != '') {
+            find = await db.collection("feedbacks").find({$or: [
+                {username: {$regex: search, $options: "i"}},
+                {email: {$regex: search, $options: "i"}}
+            ]}).toArray();
+        } else {
+            find = await db.collection("feedbacks").find({}).toArray();
+        }
+        
         if(!find || find.length <= 0) {
            return {
                notFound: true
@@ -87,10 +100,20 @@ export async function getAllFeedbacks() {
     }
 }
 
-export async function getAllContacts({search}) {
+export async function getAllContacts({id, search}) {
     let db = await connectDatabase();
     try {
-        let find = await db.collection("contacts").find({}).toArray();
+        let find;
+        
+        if(id != null && id != "") {
+           let objectId = new ObjectId(id);
+           find = await db.collection("contacts").find({_id: objectId}).toArray();
+        } else if(search != null && search != '') {
+           find = await db.collection("contacts").find({$or: [{username: {$regex: search, $options: "i"}},{email: {$regex: search, $options: "i"}}]}).toArray();
+        } else {
+           find = await db.collection("contacts").find({}).toArray();
+        }
+
         if(!find || find.length <= 0) {
            return {
                notFound: true
@@ -185,10 +208,10 @@ export async function getCategoryById({id}) {
     }
 }
 
-export async function getAllArticles({id , category}) {
+export async function getAllArticles({id , category, search}) {
     try {
         let db = await connectDatabase();
-        if(id !== null && id !== "") {
+        if(id != null && id != "") {
            let objectId = new ObjectId(id);
            let find = await db.collection("articles").find({_id: objectId}).toArray();
            try {
@@ -210,8 +233,25 @@ export async function getAllArticles({id , category}) {
            await db.collection("articles").deleteOne({_id: objectId})
         }
         
-        let find = await db.collection("articles").find({category: category}).toArray();
-        if(!find || find.length <= 0) {
+        let find = await db.collection("articles").find({
+            category: category,
+            $or: [
+                {
+                    title: {
+                        $regex: remove_dash(search) || "",
+                        $options: "i", // Case-insensitive search
+                    },
+                },
+                {
+                    desc: {
+                        $regex: remove_dash(search) || "",
+                        $options: "i", // Case-insensitive search
+                    },
+                },
+            ],
+        }).toArray();
+        
+        if(!find || find.length < 0) {
             return {
                 notFound: true
             }
@@ -224,6 +264,7 @@ export async function getAllArticles({id , category}) {
 
         return data;
     } catch(error) {
+        console.log(error);
         return {
             notFound: true
         }
@@ -349,7 +390,7 @@ export async function getFeedbacksFor30() {
             return { notFound: true };
         }
 
-        // Filter documents where the date falls within the last 30 day
+        // Filter documents where the date falls within the last 30 days
         find = find.filter(contact => {
             const contactDate = new Date(contact.date);
             return contactDate >= thirtyDaysAgo && contactDate < now;
@@ -385,6 +426,82 @@ export async function getArticlesBySearch({search, category}) {
         }
 
         let data = await find.map((d, k) => ({
+            ...d,
+            _id: d._id.toString()
+        }))
+
+        return data;
+    } catch(error) {
+        return {
+            notFound: true
+        }
+    }
+}
+
+export async function getSocialAddings() {
+    try {
+        let db = await connectDatabase();
+        let find = await db.collection("socialDetails").find({}).toArray();
+        if(!find || find.length === 0) {
+            return {
+                notFound: true
+            }
+        }
+
+        let data = find.map((d, k) => ({
+            ...d,
+            _id: d._id.toString()
+        }))
+
+        return data;
+    } catch(error) {
+        return {
+            notFound: true
+        }
+    }
+}
+
+export async function getQuestionAndAnswer({id}) {
+    try {
+        let db = await connectDatabase();
+        let objectId = new ObjectId(id);
+        if(objectId != null && objectId != "") {
+            await db.collection("qan").deleteOne({_id: objectId});
+        }
+
+        let find = await db.collection("qan").find({}).toArray();
+        if(!find || find.length === 0) {
+            return {
+                notFound: true
+            }
+        }
+
+        let data = find.map((d, k) => ({
+            ...d,
+            _id: d._id.toString()
+        }))
+
+        return data;
+    } catch(error) {
+        return {
+            notFound: true
+        }
+    }
+}
+
+export async function getQuestionsById({id}) {
+    try {
+        let db = await connectDatabase();
+        let objectId = new ObjectId(id);
+        let query = objectId != null ? {_id: objectId} : {};
+        let find = await db.collection("qan").find(query).toArray();
+        if(!find || find.length === 0) {
+            return {
+                notFound: true
+            }
+        }
+        
+        let data = find.map((d, k) => ({
             ...d,
             _id: d._id.toString()
         }))

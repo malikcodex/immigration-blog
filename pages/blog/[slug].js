@@ -51,7 +51,7 @@ const Blog = ({articles}) => {
                                     d.tags !== "" && d.tags !== null && (
                                         <>
                                         <h3 className="fw-bold mb-3 lh-base fs-4">Tags</h3>
-                                        <div className="d-flex gap-2 mb-3">
+                                        <div className="d-flex flex-wrap gap-2 mb-3">
                                         {
                                             d.tags && d.tags.split(/\,/).map((tags, index) => (
                                                 <a href="#" key={index} className="border rounded btn btn-light p-2">{tags}</a>

@@ -427,7 +427,7 @@ const trainingData = [
                         </div>
                         <div className="gap-3 d-flex mt-4 justify-content-start section_holder">
                             <i className="bi bi-chat bg-shadow-sm bg-white p-3 rounded fs-3 addHoverColor"></i>
-                            <i className="bi bi-whatsapp bg-shadow-sm bg-white p-3 rounded fs-3 addHoverColor"></i>
+                            <i style={{color: 'green !important;'}} className="bi bi-whatsapp bg-shadow-sm p-3 rounded fs-3 addHoverColor"></i>
                             <i className="bi bi-robot bg-shadow-sm bg-white p-3 rounded fs-3 addHoverColor"></i>
                         </div>
                                                 
